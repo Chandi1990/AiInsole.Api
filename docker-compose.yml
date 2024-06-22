@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  aiinsole.api:
+    image: ${DOCKER_REGISTRY-}aiinsoleapi
+    build:
+      context: .
+      dockerfile: AiInsole.Api/Dockerfile
