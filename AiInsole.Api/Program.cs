@@ -25,8 +25,8 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-app.MapHealthChecks("/healthz");
-app.MapIdentityApi<IdentityUser>();
+//app.MapHealthChecks("/healthz");
+//app.MapIdentityApi<IdentityUser>();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -34,7 +34,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
